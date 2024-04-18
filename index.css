@@ -1,0 +1,132 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: #F6F4F1;
+}
+
+.top {
+    margin: 0em;
+    background-color: #423E3A;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.top_left{
+    grid-column: 1/2;
+}
+
+/* responsible design */
+.top_left img {
+    width: 700px;
+}
+
+.top_right{
+    grid-column: 2/3;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    color: white;
+}
+
+.top_right h1 {
+    margin-bottom: 0em;
+}
+
+.top_right p {
+    margin-top: 0em;
+}
+
+.about h2 {
+    text-align: center;
+    margin: 4%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 4%;
+}
+
+.card {
+    background-color: white;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    padding: 4vw;
+    text-align: center
+}
+
+.button {
+    width: 140px;
+    height: 30px;
+    display: block;
+    margin: auto;
+
+}
+
+.button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px 5px 0px 0px #DEDEDE;
+    padding: 4%;
+}
+
+.button a:hover{
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: none;
+}
+
+/* .button{
+    width:500px;
+    height:80px;
+    line-height:80px;
+}
+.button a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#0099FF;
+    text-align:center;
+    color:#FFFFFF;
+    font-size:30px;
+    font-weight:bold;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    box-shadow:5px 5px 0px 0px #DEDEDE ;
+}
+.button a:hover{
+    background:#0099FF;
+    color:#FFFC00;
+    margin-left:5px;
+    margin-top:5px;
+    box-shadow:none;
+} */
+
+
+.project {
+    margin: 0em;
+    /* background-color: #F6F4F1; */
+}
+
+.contact {
+    margin: 0em;
+    /* background-color: #F6F4F1; */
+}
+
+footer {
+    margin: 0em;
+    background-color: black;
+}
