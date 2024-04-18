@@ -83,7 +83,7 @@ module.exports = {
                 renderCSS('./index.css', response);
                 break;
             case '/images/top.jpg' :
-                renderIMG('./top.jpg', response);
+                renderIMG('./images/top.jpg', response);
                 break;
             // 2. about page
             case '/about':
