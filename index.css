@@ -8,125 +8,158 @@ body {
     background-color: #F6F4F1;
 }
 
+a {
+    color: black;
+}
+
 .top {
     margin: 0em;
     background-color: #423E3A;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
 }
 
-.top_left{
-    grid-column: 1/2;
+#top_left{
+    grid-area: left;
 }
 
 /* responsible design */
-.top_left img {
-    width: 700px;
+#top_left img {
+    width: 100%;
 }
 
-.top_right{
-    grid-column: 2/3;
+#top_right{
+    grid-area: right;
     display: grid;
-    place-content: center;
-    place-items: center;
-    color: white;
+    align-content: center;
+    justify-content: center;
 }
 
-.top_right h1 {
+#top_right h1 {
     margin-bottom: 0em;
+    color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: xx-large;
+    
 }
 
-.top_right p {
+#top_right p {
     margin-top: 0em;
+    color: white;
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
 
-.about h2 {
+h2 {
     text-align: center;
     margin: 4%;
+    font-size: xx-large;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4%;
     justify-content: center;
     margin: 4%;
 }
 
 .card {
     background-color: white;
-    margin-left: 4vw;
-    margin-right: 4vw;
     padding: 4vw;
-    text-align: center
+    text-align: center;
 }
 
-.button {
-    width: 140px;
-    height: 30px;
-    display: block;
-    margin: auto;
-
-}
-
-.button a{
-    display: block;
+.card img{
     width: 100%;
-    height: 100%;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+button {
     text-decoration: none;
     background-color: black;
     text-align: center;
     color: white;
-    font-size: 20px;
-    box-shadow: 5px 5px 0px 0px #DEDEDE;
-    padding: 4%;
+    font-size: 18pt;
+    cursor: pointer;
+    padding: 2%;
+    font-weight: bold;
+    transition: .3s;
+    border: none;
 }
 
-.button a:hover{
-    margin-left: 5px;
-    margin-top: 5px;
-    box-shadow: none;
-}
+button:hover{
+    background-color: #9A9796;
+    transform: scale(1.1);
 
-/* .button{
-    width:500px;
-    height:80px;
-    line-height:80px;
-}
-.button a{
-    display:block;
-    width:100%;
-    height:100%;
-    text-decoration: none;
-    background:#0099FF;
-    text-align:center;
-    color:#FFFFFF;
-    font-size:30px;
-    font-weight:bold;
-    border-radius:10px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    box-shadow:5px 5px 0px 0px #DEDEDE ;
-}
-.button a:hover{
-    background:#0099FF;
-    color:#FFFC00;
-    margin-left:5px;
-    margin-top:5px;
-    box-shadow:none;
-} */
-
-
-.project {
-    margin: 0em;
-    /* background-color: #F6F4F1; */
 }
 
 .contact {
-    margin: 0em;
-    /* background-color: #F6F4F1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid black;
+    border-width: thin;
+}
+
+textarea{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid black;
+    border-width: thin;
 }
 
 footer {
     margin: 0em;
     background-color: black;
+    display: grid;
+    grid-template-areas: "left middle right";
+}
+
+#menu {
+    color: white;
+    grid-area: left;
+    margin: 4%;
+}
+
+#footer_img {
+    grid-area: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_info{
+    grid-area: right;
+    color: white;
+    margin: 4%;
+    text-align: right;
+}
+
+footer p{
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+footer a{
+    color: white;
 }

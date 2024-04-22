@@ -7,27 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <header>
-        <a href="./api" class="api">API</a>
-        <a href="./about" class="about">About</a>
-        <a href="./project" class="project">My Project</a> 
+        <a name="page_top"></a>
+        <a href="#about">About</a>
+        <a href="#project">My Project</a> 
+        <a href="#contact">Contact</a>
     </header>
 
     <section class="top">
-        <div class="top_left">
+        <div id="top_left">
             <img src="/images/top.jpg" alt="top_image">
         </div>
-        <div class="top_right">
+        <div id="top_right">
             <h1>Misato Seki</h1>
             <p>Web Developer</p>
         </div>
     </section>
 
     <section class="about">
-        <h2>About Me</h2>
+        <a name="about"><h2>About Me</h2></a>
         <div class="cards">
             <div class="card">
                 <h3>Experience</h3>
@@ -38,7 +38,7 @@
                     Architectural Engineer<br>
                     (Nagano Prefecture/ Japan)<br>
                     <br>
-                    Bachelor of Engineering<br>
+                    Bachelor of Engineering, Information Technology<br>
                     (Centria University of Applied Sciences/ Finland)
                 </p>
             </div>
@@ -54,7 +54,7 @@
                 </p>
             </div>
             <div class="card">
-                <h3>Soft Skills</h3>
+                <h3>Business Skills</h3>
                 <p>
                     Creativity<br>
                     Project Management<br>
@@ -65,45 +65,67 @@
                 </p>
             </div>
         </div>
-        <div class="button">
-            <a href="./about" class="link_to_about">Show More</a>
+        <div class="button-container">
+            <button onclick="location.href='./about'">More</button>
         </div>
     </section>
 
     <section class="project">
-        <h2>My Project</h2>
-        <h3>Portfolio Website</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio labore eius consectetur ullam nisi, culpa, suscipit cupiditate amet repudiandae explicabo reiciendis placeat dolor veniam est repellendus consequatur at animi?</p>
-        <h3>Pokemon API</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor vel asperiores libero ab praesentium tenetur qui, eaque laudantium, aliquid itaque facilis iusto ullam similique. Deserunt vero asperiores cupiditate amet!</p>
-        <h3>Flashcard App</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt commodi magnam atque eius harum eaque quaerat ea, veritatis magni, soluta quod sunt. Ipsum quidem illo neque est esse laboriosam praesentium?</p>
+        <a name="project"><h2>My Project</h2></a>
+        <div class="cards">
+            <div class="card">
+                <img src="/images/News_API.jpg" alt="News-API">
+                <a href="https://github.com/Misato-Seki/News-API"><h3>News API</h3></a>
+                <p>This is a program that retrieves news from the News API.</p>
+            </div>
+            <div class="card">
+                <img src="/images/Pokemon_API.jpg" alt="Pokemon-API">
+                <a href="./api"><h3>Pokemon API</h3></a>
+                <p>This program retrieves an image related to a Pokémon based on user input from the Pokémon API. </p>
+            </div>
+            <div class="card">
+                <img src="/images/Flashcard.jpg" alt="Flashcard">
+                <a href="https://github.com/Misato-Seki/FlashCardApp"><h3>Flashcard App</h3></a>
+                <p>This is a simple flashcard app written in JavaScript.</p>
+            </div>
+        </div>
     </section>
 
     <section class="contact">
-        <h2>Contact</h2>
+        <a name="contact"><h2>Contact</h2></a>
         <label for="name">name</label>
-        <input type="text"><br>
+        <input type="text" class="input" placeholder="Enter your name">
         <label for="">e-mail</label>
-        <input type="text"><br>
-        <label for="text">text</label><br>
-        <textarea name="" id="" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="Send">
+        <input type="text" class="input" placeholder="ex: example@gmail.com">
+        <label for="text">text</label>
+        <textarea name="" id="" cols="40" rows="10" placeholder="Type your message"></textarea>
     </section>
+    <div class="button-container">
+        <button onclick="">Send</button>
+    </div>
+    <br>
 
     <footer>
-        <a href="./api" class="api">API</a>
-        <a href="./about" class="about">About</a>
-        <a href="./project" class="project">My Project</a>
+        <div id="menu">
+            <p>Menu</p>
+            <a href="#page_top" class="page_top">Page Top</a><br>
+            <a href="#about" class="about">About</a><br>
+            <a href="#project" class="project">My Project</a>
+        </div>
 
-        <img src="" alt="">
+        <div id="footer_img">
+            <img src="./images/footer.jpg" alt="footer_img">
+        </div>
 
-        <p>Contact</p>
-        <p>LinkedIn</p>
-        <p>GitHub</p>
-        <p>xxxx@centria.fi</p>
+        <div id="contact_info">
+            <p>Contact</p>
+            <a href="https://www.linkedin.com/in/misato-seki-198a16251/">LinkedIn</a><br>
+            <a href="https://github.com/Misato-Seki">GitHub</a><br>
+            <a href="#">xxxx@centria.fi</a><br>
+        </div>
     </footer>
     
-    <!-- JavaScript file import -->
+    <!-- JavaScript and CSS file import -->
+    <link rel="stylesheet" href="./index.css">
 </body>
 </html>
