@@ -22,6 +22,38 @@ a {
     color: black;
 }
 
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+nav ul{
+    display: table;
+    margin: 0 auto;
+    padding: 0 ;
+    width: 80%;
+    text-align: center;
+    }
+    nav li{
+    display: table-cell;
+    min-width: 50px;
+    }
+    nav a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    nav li:hover{
+    color: #E7DA66;
+    border-bottom: 3px solid #423E3A;
+    }
+
+
 .top {
     margin: 0em;
     background-color: #423E3A;
@@ -186,5 +218,28 @@ footer a{
         justify-content: center;
         margin: 4%;
     }
+
+    .contact {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        
+    }
+
+   #more{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: 100px;
+    }
+    
+    h2#contact{
+        text-align: center;
+        margin-top: 100px;
+        font-size: xx-large;
+    }
+
 
 }

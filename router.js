@@ -57,6 +57,9 @@ module.exports = {
             case '/index.css' :
                 renderCSS('./index.css', response);
                 break;
+            case '/hamburgerMenu.js':
+                renderJS('./hamburgerMenu.js', response);
+                break;
             // case '/images/top.jpg' :
             //     renderIMG('./images/top.jpg', response);
             //     break;
