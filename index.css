@@ -1,3 +1,13 @@
+* {
+	float: none;
+	position: static;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -22,11 +32,6 @@ a {
 
 #top_left{
     grid-area: left;
-}
-
-/* responsible design */
-#top_left img {
-    width: 100%;
 }
 
 #top_right{
@@ -74,13 +79,10 @@ h2 {
     text-align: center;
 }
 
-.card img{
-    width: 100%;
-}
-
 .button-container{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 button {
@@ -107,6 +109,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 input{
@@ -162,4 +165,26 @@ footer p{
 
 footer a{
     color: white;
+}
+
+@media screen and (max-width:480px){
+    .top {
+        margin: 0em;
+        background-color: #423E3A;
+        display: grid;
+        grid-template-areas: "left"
+        "right";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 4%;
+        justify-content: center;
+        margin: 4%;
+    }
+
 }

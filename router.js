@@ -57,18 +57,18 @@ module.exports = {
             case '/index.css' :
                 renderCSS('./index.css', response);
                 break;
-            case '/images/top.jpg' :
-                renderIMG('./images/top.jpg', response);
-                break;
-            case '/images/News_API.jpg':
-                renderIMG('./images/News_API.jpg', response);
-                break;
-            case '/images/Pokemon_API.jpg':
-                renderIMG('./images/Pokemon_API.jpg', response);
-                break;
-            case '/images/Flashcard.jpg':
-                renderIMG('./images/Flashcard.jpg', response);
-                break;
+            // case '/images/top.jpg' :
+            //     renderIMG('./images/top.jpg', response);
+            //     break;
+            // case '/images/News_API.jpg':
+            //     renderIMG('./images/News_API.jpg', response);
+            //     break;
+            // case '/images/Pokemon_API.jpg':
+            //     renderIMG('./images/Pokemon_API.jpg', response);
+            //     break;
+            // case '/images/Flashcard.jpg':
+            //     renderIMG('./images/Flashcard.jpg', response);
+            //     break;
             case '/images/footer.jpg':
                 renderIMG('./images/footer.jpg', response);
                 break;
