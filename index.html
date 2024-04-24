@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a name="page_top"></a>
+        
         <nav>
             <ul>
             <li><a href="#page_top">Home</a>
@@ -21,19 +21,19 @@
         </nav>
     </header>
 
-
-    <section class="top">
+    <section id="top">
         <div id="top_left">
-            <img src="https://github.com/Misato-Seki/Misato-Blog/blob/main/images/top.jpg?raw=true" alt="top_image">
+            <a name="page_top"></a><img src="https://github.com/Misato-Seki/Misato-Blog/blob/main/images/top.jpg?raw=true" alt="top_image"></a>
         </div>
         <div id="top_right">
-            <h1>Misato Seki</h1>
-            <p>Web Developer</p>
+            <h1 class="top_right_content">Misato Seki</h1>
+            <p class="top_right_content">Web Developer</p>
         </div>
     </section>
 
-    <section class="about">
-        <a name="about"><h2>About Me</h2></a>
+    <section id="about">
+        <a name="about"> </a>
+        <h2>About Me</h2>
         <div class="cards">
             <div class="card">
                 <h3>Experience</h3>
@@ -76,8 +76,9 @@
         <button onclick="location.href='./about'">More</button>
     </div>
 
-    <section class="project">
-        <a name="project"><h2>My Project</h2></a>
+    <section id="project">
+        <a name="project"> </a>
+        <h2>My Project</h2>
         <div class="cards">
             <div class="card">
                 <img src="https://github.com/Misato-Seki/Misato-Blog/blob/main/images/News_API.jpg?raw=true" alt="News-API">
@@ -97,8 +98,9 @@
         </div>
     </section>
 
-    <section class="contact">
-        <a name="contact"><h2 id="contact">Contact</h2></a>
+    <section id="contact">
+        <a name="contact"> </a>
+        <h2 id="contact">Contact</h2>
         <label for="name">name</label>
         <input type="text" class="input" placeholder="Enter your name">
         <label for="">e-mail</label>
@@ -106,10 +108,9 @@
         <label for="text">text</label>
         <textarea name="" id="" cols="40" rows="10" placeholder="Type your message"></textarea>
     </section>
-    <div class="button-container">
+    <div class="button-container" id="send">
         <button onclick="">Send</button>
     </div>
-    <br>
 
     <footer>
         <div id="menu">

@@ -14,12 +14,7 @@ body {
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
-    background-color: #F6F4F1;
-}
-
-a {
-    color: black;
+        "wdth" 100;;
 }
 
 header{
@@ -54,9 +49,8 @@ nav ul{
     }
 
 
-.top {
-    margin: 0em;
-    background-color: #423E3A;
+#top {
+    background-color: #745E4D;
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 1fr 1fr;
@@ -73,22 +67,22 @@ nav ul{
     justify-content: center;
 }
 
-#top_right h1 {
+.top_right_content{
     margin-bottom: 0em;
     color: white;
     display: grid;
     align-content: center;
     justify-content: center;
-    font-size: xx-large;
-    
 }
 
-#top_right p {
-    margin-top: 0em;
-    color: white;
-    display: grid;
-    align-content: center;
-    justify-content: center;
+h1 {
+    font-size: xx-large;   
+}
+
+#about, #more{
+    background-color: #F6F4F1;
+    color: #745E4D;
+    padding: 4%;
 }
 
 h2 {
@@ -109,6 +103,7 @@ h2 {
     background-color: white;
     padding: 4vw;
     text-align: center;
+    color: #745E4D;
 }
 
 .button-container{
@@ -119,7 +114,7 @@ h2 {
 
 button {
     text-decoration: none;
-    background-color: black;
+    background-color: #745E4D;
     text-align: center;
     color: white;
     font-size: 18pt;
@@ -136,12 +131,26 @@ button:hover{
 
 }
 
-.contact {
+#project{
+    background-color: #745E4D;
+    color: white;
+    padding: 4%;
+}
+
+a {
+    color: #745E4D;
+}
+
+#contact, #send {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+    background-color: #F6F4F1;
+    color: #745E4D;
+    padding: 4%;
+
 }
 
 input{
@@ -149,7 +158,7 @@ input{
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    border: solid black;
+    border: solid 745E4D;
     border-width: thin;
 }
 
@@ -158,13 +167,13 @@ textarea{
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
-    border: solid black;
+    border: solid 745E4D;
     border-width: thin;
 }
 
 footer {
     margin: 0em;
-    background-color: black;
+    background-color: #745E4D;
     display: grid;
     grid-template-areas: "left middle right";
 }

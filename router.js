@@ -57,9 +57,6 @@ module.exports = {
             case '/index.css' :
                 renderCSS('./index.css', response);
                 break;
-            case '/hamburgerMenu.js':
-                renderJS('./hamburgerMenu.js', response);
-                break;
             // case '/images/top.jpg' :
             //     renderIMG('./images/top.jpg', response);
             //     break;
@@ -78,6 +75,8 @@ module.exports = {
             // 2. About
             case '/about':
                 renderHTML('./about.html', response);
+            case '/about.css':
+                renderCSS('./about.css', response);
                 break;
             // 3. API
             case '/api':
