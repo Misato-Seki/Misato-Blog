@@ -162,5 +162,55 @@ button:hover{
 }
 
 @media screen and (max-width:480px){
+    #profile{
+        background-color: #745E4D;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "left"
+        "middle"
+        "right";
+    }
+    
+    #education{
+        background-color: #F6F4F1;
+        color: #745E4D;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        'left'
+        'middle'
+        'right'
+        'left2'
+        'middle2'
+        'right2';
+    }
+
+    .middle, .middle2{
+        text-align: left;
+    }
+    
+    #work_experience{
+        background-color: #745E4D;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "left"
+        "middle"
+        "right";
+    }
+    
+    #skills{
+        background-color: #F6F4F1;
+        color: #745E4D;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "left"
+        "middle"
+        "right";
+    }
     
 }
