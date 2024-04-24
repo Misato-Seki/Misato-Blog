@@ -82,6 +82,9 @@ module.exports = {
             case '/api':
                 renderHTML('./api.html', response);
                 break;
+            case '/api.css':
+                renderCSS('./api.css',response);
+                break;
             case '/api.js':
                 renderJS('./api.js', response);
                 break;
