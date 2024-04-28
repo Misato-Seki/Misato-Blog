@@ -4,22 +4,20 @@ var fs = require('fs');
 
 // define 'renderFile' function
 function renderFile(path, response, contentType){
-    // fs.readFile(filename, encoding, callback_function)
-    // encoding: It holds the encoding of the file. Its default value is ‘utf8’.
-    // callback_function: function that is called after reading of file. It takes two parameters:
-    // err: If any error occurred.
-    // data: Contents of the file.
     fs.readFile(path, null, function(error, data) {
         if (error) {
+            console.log(error); 
             response.writeHead(404);
             response.write("Page not found");
+            response.end();
         } else {
             response.writeHead(200, {'Content-Type': contentType});
             response.write(data);
+            response.end();
         }
-        response.end();
     });
 }
+
 
 // define 'renderHTML' function
 function renderHTML(path, response){
@@ -75,6 +73,7 @@ module.exports = {
             // 2. About
             case '/about':
                 renderHTML('./about.html', response);
+                break;
             case '/about.css':
                 renderCSS('./about.css', response);
                 break;
